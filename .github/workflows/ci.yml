@@ -1,0 +1,22 @@
+name: retail-forecasting-ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run unit tests
+        run: pytest -q
+      - name: Run full AdventureWorks pipeline
+        run: python -m src.run_pipeline --data-dir "AdventureWorks Raw Data" --output-dir outputs --top-n-products 80 --test-weeks 12
