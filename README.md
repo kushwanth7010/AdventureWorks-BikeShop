@@ -120,3 +120,24 @@ The final report spans **8 pages** and includes an executive dashboard, regional
 ## Project Outcome
 
 Built an end-to-end business intelligence solution for AdventureWorks, analyzing **$24.9M revenue, $10.5M profit, 25K+ orders and 84K+ units** across global markets, with interactive dashboards and analytical drill-down capabilities.
+
+
+## Management Consulting Layer
+
+This repository also includes a consulting-style strategy layer that converts BI findings into a market and profitability decision framework.
+
+- `consulting_case/market_expansion_strategy.md` — executive strategy memo
+- `consulting_case/case_interview_defense.md` — interview-ready case walkthrough
+- `consulting_case/resume_bullets.md` — concise, defensible resume bullets
+
+### Consulting Problem Statement
+How should a global consumer-products business prioritize markets, product mix, pricing tests, and customer-growth initiatives to improve profitable growth?
+
+### Decision Framework
+1. **Market attractiveness:** revenue scale, growth, customer depth
+2. **Economics:** profit contribution, margin, return rate
+3. **Portfolio mix:** category concentration and cross-sell potential
+4. **Commercial levers:** pricing, customer activation, product mix
+5. **Execution:** test-and-learn roadmap with measurable KPIs
+
+AdventureWorks is a fictional Microsoft sample business. This portfolio case demonstrates structured strategy thinking and does not represent advice to a real company.
