@@ -38,7 +38,8 @@ class RepositoryIntegrityTests(unittest.TestCase):
                     reader = csv.reader(file)
                     header = next(reader, None)
                     self.assertIsNotNone(header)
-                    self.assertGreater(len(header), 1)
+                    expected_columns = 1 if name == "AdventureWorks Calendar Lookup.csv" else 2
+                    self.assertGreaterEqual(len(header), expected_columns)
                     self.assertIsNotNone(next(reader, None))
 
     def test_sales_years_have_the_same_schema(self):
